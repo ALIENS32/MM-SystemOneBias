@@ -1,0 +1,20 @@
+id: qwen_27b
+source: Qwen/Qwen3.8-27B
+revision: 1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0
+family: qwen_vlm
+resource_root: ~/.cache/mm-systemonebias/models
+download_workers: 4
+device_map: auto
+attn_implementation: sdpa
+max_input_tokens: 262144
+max_images: 8
+retries: 3
+thinking_budget: 0
+thinking_end: </think>
+after_thinking: '
+
+
+  '
+answer_instruction: Return only the answer label. Do not include an explanation.
+cpu_threads: 4
+batch_size: 1

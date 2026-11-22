@@ -1,0 +1,25 @@
+id: typesafe_jev
+source: null
+revision: null
+family: typesafe
+resource_root: ~/.cache/mm-systemonebias/models
+download_workers: 4
+device_map: auto
+attn_implementation: sdpa
+max_input_tokens: 16384
+max_images: 8
+retries: 3
+api_key: ${TYPESAFE_API_KEY}
+base_url: ${TYPESAFE_BASE_URL}
+endpoint: /typesafe/v1/systemone
+model: jev-1.14.0
+timeout_seconds: 180
+image_output_dir: ~/.cache/mm-systemonebias/typesafe-images
+image_version: typesafe-jev-image-v1
+image_min_side: 280
+image_max_side: 1568
+image_max_bytes: 16777216
+image_max_request_bytes: 33554432
+headers:
+  TypeSafe-Danger-Zone-Images: 'true'
+batch_size: 1

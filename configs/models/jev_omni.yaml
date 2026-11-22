@@ -1,0 +1,13 @@
+id: jev_omni
+source: akhilaaa3/Jev-Omni
+revision: fee89b076e2263bfa8bce8d34142caa4ca733a48
+family: jev_omni
+resource_root: ~/.cache/mm-systemonebias/models
+download_workers: 4
+device_map: auto
+attn_implementation: sdpa
+max_input_tokens: 16384
+max_images: 1
+retries: 3
+cpu_threads: 4
+batch_size: 1

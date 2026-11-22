@@ -1,0 +1,5 @@
+httpx>=0.28
+Pillow>=11
+PyYAML>=6
+tqdm>=4.67
+huggingface_hub>=0.34

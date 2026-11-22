@@ -1,0 +1,20 @@
+id: gemma_12b
+source: google/gemma-4-12B-it
+revision: 707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7
+family: gemma_vlm
+resource_root: ~/.cache/mm-systemonebias/models
+download_workers: 4
+device_map: auto
+attn_implementation: sdpa
+max_input_tokens: 16384
+max_images: 8
+retries: 3
+thinking_budget: 0
+thinking_end: </think>
+after_thinking: '
+
+
+  '
+answer_instruction: Return only the answer label. Do not include an explanation.
+cpu_threads: 4
+batch_size: 1

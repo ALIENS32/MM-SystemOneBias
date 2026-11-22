@@ -1,0 +1,15 @@
+id: openai_compatible
+family: openai_compatible
+base_url: ${OPENAI_BASE_URL}
+api_key: ${OPENAI_API_KEY}
+model: ${OPENAI_MODEL}
+timeout_seconds: 180
+retries: 3
+answer_instruction: Return only the answer label. Do not include an explanation.
+image_detail: high
+temperature: 0
+max_tokens: 128
+logprobs: false
+top_logprobs: 20
+reasoning_effort: null
+batch_size: 1

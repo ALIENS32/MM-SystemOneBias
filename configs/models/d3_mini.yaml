@@ -1,0 +1,13 @@
+id: d3_mini
+source: vllm-sr/d3-mini
+revision: 97dd054df4b3e0b3beb6af23ab8c82b7c0052e0e
+family: d3
+resource_root: ~/.cache/mm-systemonebias/models
+download_workers: 4
+device_map: auto
+attn_implementation: sdpa
+max_input_tokens: 16384
+max_images: 8
+retries: 3
+cpu_threads: 4
+batch_size: 1

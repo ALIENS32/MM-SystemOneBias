@@ -1,0 +1,20 @@
+id: lfm_3b
+source: LiquidAI/LFM2.5-VL-3B
+revision: 35a118d938ce6d123ac2d371649f24a8efb69058
+family: lfm_vlm
+resource_root: ~/.cache/mm-systemonebias/models
+download_workers: 4
+device_map: auto
+attn_implementation: sdpa
+max_input_tokens: 16384
+max_images: 8
+retries: 3
+thinking_budget: 0
+thinking_end: </think>
+after_thinking: '
+
+
+  '
+answer_instruction: Return only the answer label. Do not include an explanation.
+cpu_threads: 4
+batch_size: 1
